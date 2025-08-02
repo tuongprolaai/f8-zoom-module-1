@@ -1,3 +1,187 @@
 <header class="header">
-    <h2>HEADER</h2>
+    <div class="container">
+        <div class="header__inner">
+
+                    <!-- Logo -->
+                    <a href="/" class="header__logo">
+                        <img
+                            src="./assets/images/logo.png"
+                            alt="Justice Law Firm Logo"
+                        />
+                    </a>
+
+                     <!-- ==================== MOBILE NAVIGATION SETUP START ==================== -->
+            <!-- Phần Checkbox Hack cho mobile menu -->
+            <input type="checkbox" id="mobile-nav-toggle" class="mobile-nav__toggle" hidden />
+            <label for="mobile-nav-toggle" class="mobile-nav__hamburger">
+                <!-- Icon Hamburger (☰) -->
+    <i class="fa-solid fa-bars icon-hamburger"></i>
+            </label>
+            <nav class="mobile-nav">
+            
+
+
+            <!-- ==================== MOBILE NAVIGATION SETUP START ==================== -->
+            
+            
+            <label for="mobile-nav-toggle" class="mobile-nav__close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </label>
+            <!-- Logo (Desktop) -->
+            <a href="/" class="mobile-nav__logo">
+                <img src="./assets/images/logo.png" alt="Justice Law Firm Logo" />
+            </a>
+                <ul class="mobile-nav__list">
+                    <li class="mobile-nav__item"><a href="/" class="mobile-nav__link">Home</a></li>
+                    <li class="mobile-nav__item"><a href="/about.html" class="mobile-nav__link">About</a></li>
+                    <!-- ========== ITEM CÓ SUB-MENU (ACCORDION) START ========== -->
+                    <li class="mobile-nav__item mobile-nav__item--has-submenu">
+                        <!-- 1. Checkbox ẩn cho sub-menu -->
+                        <input type="checkbox" id="submenu-toggle-practice" class="submenu-toggle" hidden />
+                        
+                        <!-- 2. Label bao bọc link cha -->
+                        <label for="submenu-toggle-practice" class="mobile-nav__link">
+                            <span>Practice Areas</span>
+                            <i class="fa-solid fa-chevron-down nav__arrow-icon"></i>
+                        </label>
+                        
+                        <!-- 3. Sub-menu -->
+                        <ul class="mobile-sub-nav">
+                            <li class="mobile-sub-nav__item">
+                                <a href="#!" class="mobile-sub-nav__link">Divorce</a>
+                            </li>
+                            <li class="mobile-sub-nav__item">
+                                <a href="#!" class="mobile-sub-nav__link">Personal Injury</a>
+                            </li>
+                            <li class="mobile-sub-nav__item">
+                                <a href="#!" class="mobile-sub-nav__link">Employment</a>
+                            </li>
+                            <!-- ... các mục khác ... -->
+                        </ul>
+                    </li>
+                    <!-- ========== ITEM CÓ SUB-MENU (ACCORDION) END ========== -->
+                    <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Attorneys</a></li>
+                    <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Page</a></li>
+                </ul>
+
+  
+            </nav>
+            <label for="mobile-nav-toggle" class="mobile-nav__overlay"></label>
+            <!-- ==================== MOBILE NAVIGATION SETUP END ==================== -->
+ 
+                    <!-- Navigation -->
+                    <nav class="header__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="/" class="nav__link nav__link--active"
+                                    >Home
+                                    <i
+                                        class="fa-solid fa-chevron-down nav__arrow-icon"
+                                    ></i
+                                ></a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="/about.html" class="nav__link"
+                                    >About
+                                    <i
+                                        class="fa-solid fa-chevron-down nav__arrow-icon"
+                                    ></i
+                                ></a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link"
+                                    >Practice Areas
+                                    <i
+                                        class="fa-solid fa-chevron-down nav__arrow-icon"
+                                    ></i
+                                ></a>
+                                <!-- Dropdown Menu (Sub Nav) -->
+                                <ul class="sub-nav">
+                                    <li class="sub-nav__item">
+                                        <a href="#!" class="sub-nav__link"
+                                            >Divorce</a
+                                        >
+                                    </li>
+                                    <li
+                                        class="sub-nav__item sub-nav__item--has-child"
+                                    >
+                                        <a href="#!" class="sub-nav__link">
+                                            <span>Personal Injury</span>
+                                            <i
+                                                class="fa-solid fa-chevron-right"
+                                            ></i>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="sub-nav__item sub-nav__item--has-child"
+                                    >
+                                        <a href="#!" class="sub-nav__link">
+                                            <span>Employment</span>
+                                            <i
+                                                class="fa-solid fa-chevron-right"
+                                            ></i>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="sub-nav__item sub-nav__item--has-child"
+                                    >
+                                        <a href="#!" class="sub-nav__link">
+                                            <span>Immigration</span>
+                                            <i
+                                                class="fa-solid fa-chevron-right"
+                                            ></i>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="sub-nav__item sub-nav__item--has-child"
+                                    >
+                                        <a href="#!" class="sub-nav__link">
+                                            <span>Family</span>
+                                            <i
+                                                class="fa-solid fa-chevron-right"
+                                            ></i>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="sub-nav__item sub-nav__item--has-child"
+                                    >
+                                        <a href="#!" class="sub-nav__link">
+                                            <span>Property</span>
+                                            <i
+                                                class="fa-solid fa-chevron-right"
+                                            ></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Attorneys</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link"
+                                    >Page
+                                    <i
+                                        class="fa-solid fa-chevron-down nav__arrow-icon"
+                                    ></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </nav>
+           
+                
+                    <!-- Contact Info -->
+                    <div class="header__contact">
+                        <a href="tel:000123456789" class="header__contact-link">
+                            <div class="header__contact-info">
+                                <span class="header__contact-text">Call:</span>
+                                <span class="header__contact-phone"
+                                    >(000) 123 456 789</span
+                                >
+                            </div>
+                        </a>
+                    </div>
+               
+            </div>
+        </div>
+    </div>
 </header>

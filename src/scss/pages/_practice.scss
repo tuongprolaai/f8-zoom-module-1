@@ -1,0 +1,77 @@
+@use "../variables" as *;
+.page-practice .header {
+    background-color: #fbf5e5;
+}
+
+.hero-subpage {
+    padding-top: 70px;
+    background-color: #fbf5e5;
+    text-align: center;
+    &__heading {
+        color: var(--Dark, #0e1412);
+        font-family: "Roboto Slab";
+        font-size: 6rem;
+        font-weight: 800;
+        line-height: 1.1667; /* 116.667% */
+    }
+    &__desc {
+        color: var(--Dark, #0e1412);
+        font-family: Manrope;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 1.66667; /* 166.667% */
+        margin-top: 18px;
+        margin-bottom: 100px;
+    }
+}
+
+.practice-grid {
+    margin: 150px 0;
+    &__header {
+        margin-bottom: 150px;
+        text-align: center;
+        .section-label {
+            color: var(--Grey, #586863);
+        }
+        .section-heading {
+            color: #0e1412;
+        }
+        .section-desc {
+            color: var(--Grey, #586863);
+            width: 470px;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+    .practice-card {
+        &:hover .practice-card__title-wrapper {
+            background: $Orange;
+        }
+        &:hover .practice-card__title {
+            color: #fff;
+        }
+        position: relative;
+        &__image {
+            width: 100%;
+            height: 370px;
+            object-fit: cover;
+            display: block;
+        }
+        &__title-wrapper {
+            position: absolute;
+            padding: 20px 62px;
+            background: #fff;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__title {
+            color: #0e1412;
+            font-family: Manrope;
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 1.45455; /* 145.455% */
+            text-wrap: nowrap;
+        }
+    }
+}

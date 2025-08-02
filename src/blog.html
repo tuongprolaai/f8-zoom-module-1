@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <%- include("partials/head.ejs")%>
+    </head>
+    <body>
+        <div class="page-blog">
+            <%- include('partials/header.ejs') %>
+            <main class="main">
+                <!-- ==================== BLOG PAGE SECTION START ==================== -->
+                <section class="blog-page py-5">
+                    <div class="container">
+                        <!-- Section Header -->
+                        <div class="blog-page__header mb-5">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h1 class="blog-page__heading">
+                                        Justice Law Firm Press Releases
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Filter Tabs -->
+                        <ul class="filter-tabs">
+                            <li class="filter-tabs__item">
+                                <a
+                                    href="#!"
+                                    class="filter-tabs__link filter-tabs__link--active"
+                                    >All</a
+                                >
+                            </li>
+                            <li class="filter-tabs__item">
+                                <a href="#!" class="filter-tabs__link"
+                                    >Recent</a
+                                >
+                            </li>
+                            <li class="filter-tabs__item">
+                                <a href="#!" class="filter-tabs__link"
+                                    >Popular</a
+                                >
+                            </li>
+                            <li class="filter-tabs__item">
+                                <a href="#!" class="filter-tabs__link"
+                                    >Trending</a
+                                >
+                            </li>
+                            <li class="filter-tabs__item">
+                                <a href="#!" class="filter-tabs__link"
+                                    >Oldest</a
+                                >
+                            </li>
+                        </ul>
+
+                        <!-- Blog Grid -->
+                        <div class="blog-grid mt-5">
+                            <div class="row">
+                                <!-- Blog Post Card 1 -->
+                                <div class="col-4 col-md-6 mb-4">
+                                    <article class="blog-post-card">
+                                        <figure class="blog-post-card__media">
+                                            <a href="#!"
+                                                ><img
+                                                    src="/assets/images/blog-post-1.jpg"
+                                                    alt="A gavel on a desk"
+                                            /></a>
+                                        </figure>
+                                        <div class="blog-post-card__content">
+                                            <div class="blog-post-card__author">
+                                                <img
+                                                    src="/assets/images/author-1.jpg"
+                                                    alt="Mitchell Starc"
+                                                    class="blog-post-card__avatar"
+                                                />
+                                                <div
+                                                    class="blog-post-card__author-info"
+                                                >
+                                                    <h4
+                                                        class="blog-post-card__author-name"
+                                                    >
+                                                        Mitchell Starc
+                                                    </h4>
+                                                    <p
+                                                        class="blog-post-card__author-role"
+                                                    >
+                                                        Attorney at Law
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <h3 class="blog-post-card__title">
+                                                <a href="#!"
+                                                    >5 Key Rules of Law in Our
+                                                    Society Must Know in 2022</a
+                                                >
+                                            </h3>
+                                            <a
+                                                href="#!"
+                                                class="blog-post-card__read-more"
+                                                >Learn More</a
+                                            >
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <!-- Blog Post Card 2 -->
+                                <div class="col-4 col-md-6 mb-4">
+                                    <article class="blog-post-card">
+                                        <figure class="blog-post-card__media">
+                                            <a href="#!"
+                                                ><img
+                                                    src="/assets/images/blog-post-2.jpg"
+                                                    alt="Scrabble letters spelling LAWYER"
+                                            /></a>
+                                        </figure>
+                                        <div class="blog-post-card__content">
+                                            <div class="blog-post-card__author">
+                                                <img
+                                                    src="/assets/images/author-2.jpg"
+                                                    alt="Mitchell Starc"
+                                                    class="blog-post-card__avatar"
+                                                />
+                                                <div
+                                                    class="blog-post-card__author-info"
+                                                >
+                                                    <h4
+                                                        class="blog-post-card__author-name"
+                                                    >
+                                                        Mitchell Starc
+                                                    </h4>
+                                                    <p
+                                                        class="blog-post-card__author-role"
+                                                    >
+                                                        Attorney at Law
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <h3 class="blog-post-card__title">
+                                                <a href="#!"
+                                                    >5 Key Rules of Law in Our
+                                                    Society Must Know in 2022</a
+                                                >
+                                            </h3>
+                                            <a
+                                                href="#!"
+                                                class="blog-post-card__read-more"
+                                                >Learn More</a
+                                            >
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <!-- Blog Post Card 3 -->
+                                <div class="col-4 col-md-6 mb-4">
+                                    <article class="blog-post-card">
+                                        <figure class="blog-post-card__media">
+                                            <a href="#!"
+                                                ><img
+                                                    src="/assets/images/blog-post-3.jpg"
+                                                    alt="Two men in discussion"
+                                            /></a>
+                                        </figure>
+                                        <div class="blog-post-card__content">
+                                            <div class="blog-post-card__author">
+                                                <img
+                                                    src="/assets/images/author-3.jpg"
+                                                    alt="Mitchell Starc"
+                                                    class="blog-post-card__avatar"
+                                                />
+                                                <div
+                                                    class="blog-post-card__author-info"
+                                                >
+                                                    <h4
+                                                        class="blog-post-card__author-name"
+                                                    >
+                                                        Mitchell Starc
+                                                    </h4>
+                                                    <p
+                                                        class="blog-post-card__author-role"
+                                                    >
+                                                        Attorney at Law
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <h3 class="blog-post-card__title">
+                                                <a href="#!"
+                                                    >What to Expect When you are
+                                                    Charged with DUI</a
+                                                >
+                                            </h3>
+                                            <a
+                                                href="#!"
+                                                class="blog-post-card__read-more"
+                                                >Learn More</a
+                                            >
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <!-- Có thể thêm các card khác ở đây để lấp đầy lưới -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ==================== BLOG PAGE SECTION END ==================== -->
+
+                <!-- ==================== NEWSLETTER SECTION START ==================== -->
+                <section class="newsletter py-5">
+                    <div class="container">
+                        <div class="newsletter__body">
+                            <p class="section-label">#Newsletter</p>
+                            <h2 class="section-heading">
+                                Subscribe Our Newsletter
+                            </h2>
+
+                            <form action="#!" class="newsletter__form">
+                                <input
+                                    type="email"
+                                    class="newsletter__input"
+                                    placeholder="Enter your email"
+                                    required
+                                />
+                                <button type="submit" class="btn btn--primary">
+                                    Subscribe
+                                </button>
+                            </form>
+
+                            <p class="newsletter__subtext">
+                                The latest Law News.
+                                <span>Stright to your inbox</span>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- ==================== NEWSLETTER SECTION END ==================== -->
+
+                <!-- ==================== RELATED ARTICLES SECTION START ==================== -->
+                <section class="related-articles py-5">
+                    <div class="container">
+                        <div class="row gy-3">
+                            <!-- Card 1 -->
+                            <div class="col-4 col-md-6 mb-4">
+                                <article class="blog-post-card">
+                                    <figure class="blog-post-card__media">
+                                        <a href="#!"
+                                            ><img
+                                                src="/assets/images/related-1.jpg"
+                                                alt="Article thumbnail"
+                                        /></a>
+                                    </figure>
+                                    <div class="blog-post-card__content">
+                                        <div class="blog-post-card__author">
+                                            <img
+                                                src="/assets/images/author-1.jpg"
+                                                alt="Mitchell Starc"
+                                                class="blog-post-card__avatar"
+                                            />
+                                            <div
+                                                class="blog-post-card__author-info"
+                                            >
+                                                <h4
+                                                    class="blog-post-card__author-name"
+                                                >
+                                                    Mitchell Starc
+                                                </h4>
+                                                <p
+                                                    class="blog-post-card__author-role"
+                                                >
+                                                    Attorney at Law
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <h3 class="blog-post-card__title">
+                                            <a href="#!"
+                                                >5 Key Rules of Law in Our
+                                                Society Must Know in 2022</a
+                                            >
+                                        </h3>
+                                        <a
+                                            href="#!"
+                                            class="blog-post-card__read-more"
+                                            >Learn More</a
+                                        >
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="col-4 col-md-6 mb-4">
+                                <article class="blog-post-card">
+                                    <figure class="blog-post-card__media">
+                                        <a href="#!"
+                                            ><img
+                                                src="/assets/images/related-1.jpg"
+                                                alt="Article thumbnail"
+                                        /></a>
+                                    </figure>
+                                    <div class="blog-post-card__content">
+                                        <div class="blog-post-card__author">
+                                            <img
+                                                src="/assets/images/author-1.jpg"
+                                                alt="Mitchell Starc"
+                                                class="blog-post-card__avatar"
+                                            />
+                                            <div
+                                                class="blog-post-card__author-info"
+                                            >
+                                                <h4
+                                                    class="blog-post-card__author-name"
+                                                >
+                                                    Mitchell Starc
+                                                </h4>
+                                                <p
+                                                    class="blog-post-card__author-role"
+                                                >
+                                                    Attorney at Law
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <h3 class="blog-post-card__title">
+                                            <a href="#!"
+                                                >5 Key Rules of Law in Our
+                                                Society Must Know in 2022</a
+                                            >
+                                        </h3>
+                                        <a
+                                            href="#!"
+                                            class="blog-post-card__read-more"
+                                            >Learn More</a
+                                        >
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="col-4 col-md-6 mb-4">
+                                <article class="blog-post-card">
+                                    <figure class="blog-post-card__media">
+                                        <a href="#!"
+                                            ><img
+                                                src="/assets/images/related-1.jpg"
+                                                alt="Article thumbnail"
+                                        /></a>
+                                    </figure>
+                                    <div class="blog-post-card__content">
+                                        <div class="blog-post-card__author">
+                                            <img
+                                                src="/assets/images/author-1.jpg"
+                                                alt="Mitchell Starc"
+                                                class="blog-post-card__avatar"
+                                            />
+                                            <div
+                                                class="blog-post-card__author-info"
+                                            >
+                                                <h4
+                                                    class="blog-post-card__author-name"
+                                                >
+                                                    Mitchell Starc
+                                                </h4>
+                                                <p
+                                                    class="blog-post-card__author-role"
+                                                >
+                                                    Attorney at Law
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <h3 class="blog-post-card__title">
+                                            <a href="#!"
+                                                >5 Key Rules of Law in Our
+                                                Society Must Know in 2022</a
+                                            >
+                                        </h3>
+                                        <a
+                                            href="#!"
+                                            class="blog-post-card__read-more"
+                                            >Learn More</a
+                                        >
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div class="col-4 col-md-6 mb-4">
+                                <article class="blog-post-card">
+                                    <figure class="blog-post-card__media">
+                                        <a href="#!"
+                                            ><img
+                                                src="/assets/images/related-1.jpg"
+                                                alt="Article thumbnail"
+                                        /></a>
+                                    </figure>
+                                    <div class="blog-post-card__content">
+                                        <div class="blog-post-card__author">
+                                            <img
+                                                src="/assets/images/author-1.jpg"
+                                                alt="Mitchell Starc"
+                                                class="blog-post-card__avatar"
+                                            />
+                                            <div
+                                                class="blog-post-card__author-info"
+                                            >
+                                                <h4
+                                                    class="blog-post-card__author-name"
+                                                >
+                                                    Mitchell Starc
+                                                </h4>
+                                                <p
+                                                    class="blog-post-card__author-role"
+                                                >
+                                                    Attorney at Law
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <h3 class="blog-post-card__title">
+                                            <a href="#!"
+                                                >5 Key Rules of Law in Our
+                                                Society Must Know in 2022</a
+                                            >
+                                        </h3>
+                                        <a
+                                            href="#!"
+                                            class="blog-post-card__read-more"
+                                            >Learn More</a
+                                        >
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Card 5 -->
+                            <div class="col-4 col-md-6 mb-4">
+                                <article class="blog-post-card">
+                                    <figure class="blog-post-card__media">
+                                        <a href="#!"
+                                            ><img
+                                                src="/assets/images/related-1.jpg"
+                                                alt="Article thumbnail"
+                                        /></a>
+                                    </figure>
+                                    <div class="blog-post-card__content">
+                                        <div class="blog-post-card__author">
+                                            <img
+                                                src="/assets/images/author-1.jpg"
+                                                alt="Mitchell Starc"
+                                                class="blog-post-card__avatar"
+                                            />
+                                            <div
+                                                class="blog-post-card__author-info"
+                                            >
+                                                <h4
+                                                    class="blog-post-card__author-name"
+                                                >
+                                                    Mitchell Starc
+                                                </h4>
+                                                <p
+                                                    class="blog-post-card__author-role"
+                                                >
+                                                    Attorney at Law
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <h3 class="blog-post-card__title">
+                                            <a href="#!"
+                                                >5 Key Rules of Law in Our
+                                                Society Must Know in 2022</a
+                                            >
+                                        </h3>
+                                        <a
+                                            href="#!"
+                                            class="blog-post-card__read-more"
+                                            >Learn More</a
+                                        >
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Card 6 -->
+                            <div class="col-4 col-md-6 mb-4">
+                                <article class="blog-post-card">
+                                    <figure class="blog-post-card__media">
+                                        <a href="#!"
+                                            ><img
+                                                src="/assets/images/related-1.jpg"
+                                                alt="Article thumbnail"
+                                        /></a>
+                                    </figure>
+                                    <div class="blog-post-card__content">
+                                        <div class="blog-post-card__author">
+                                            <img
+                                                src="/assets/images/author-1.jpg"
+                                                alt="Mitchell Starc"
+                                                class="blog-post-card__avatar"
+                                            />
+                                            <div
+                                                class="blog-post-card__author-info"
+                                            >
+                                                <h4
+                                                    class="blog-post-card__author-name"
+                                                >
+                                                    Mitchell Starc
+                                                </h4>
+                                                <p
+                                                    class="blog-post-card__author-role"
+                                                >
+                                                    Attorney at Law
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <h3 class="blog-post-card__title">
+                                            <a href="#!"
+                                                >5 Key Rules of Law in Our
+                                                Society Must Know in 2022</a
+                                            >
+                                        </h3>
+                                        <a
+                                            href="#!"
+                                            class="blog-post-card__read-more"
+                                            >Learn More</a
+                                        >
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div class="col-4 col-md-6 mb-4">
+                                <article class="blog-post-card">
+                                    <figure class="blog-post-card__media">
+                                        <a href="#!"
+                                            ><img
+                                                src="/assets/images/related-1.jpg"
+                                                alt="Article thumbnail"
+                                        /></a>
+                                    </figure>
+                                    <div class="blog-post-card__content">
+                                        <div class="blog-post-card__author">
+                                            <img
+                                                src="/assets/images/author-1.jpg"
+                                                alt="Mitchell Starc"
+                                                class="blog-post-card__avatar"
+                                            />
+                                            <div
+                                                class="blog-post-card__author-info"
+                                            >
+                                                <h4
+                                                    class="blog-post-card__author-name"
+                                                >
+                                                    Mitchell Starc
+                                                </h4>
+                                                <p
+                                                    class="blog-post-card__author-role"
+                                                >
+                                                    Attorney at Law
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <h3 class="blog-post-card__title">
+                                            <a href="#!"
+                                                >5 Key Rules of Law in Our
+                                                Society Must Know in 2022</a
+                                            >
+                                        </h3>
+                                        <a
+                                            href="#!"
+                                            class="blog-post-card__read-more"
+                                            >Learn More</a
+                                        >
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Card 5 -->
+                            <div class="col-4 col-md-6 mb-4">
+                                <article class="blog-post-card">
+                                    <figure class="blog-post-card__media">
+                                        <a href="#!"
+                                            ><img
+                                                src="/assets/images/related-1.jpg"
+                                                alt="Article thumbnail"
+                                        /></a>
+                                    </figure>
+                                    <div class="blog-post-card__content">
+                                        <div class="blog-post-card__author">
+                                            <img
+                                                src="/assets/images/author-1.jpg"
+                                                alt="Mitchell Starc"
+                                                class="blog-post-card__avatar"
+                                            />
+                                            <div
+                                                class="blog-post-card__author-info"
+                                            >
+                                                <h4
+                                                    class="blog-post-card__author-name"
+                                                >
+                                                    Mitchell Starc
+                                                </h4>
+                                                <p
+                                                    class="blog-post-card__author-role"
+                                                >
+                                                    Attorney at Law
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <h3 class="blog-post-card__title">
+                                            <a href="#!"
+                                                >5 Key Rules of Law in Our
+                                                Society Must Know in 2022</a
+                                            >
+                                        </h3>
+                                        <a
+                                            href="#!"
+                                            class="blog-post-card__read-more"
+                                            >Learn More</a
+                                        >
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Card 6 -->
+                            <div class="col-4 col-md-6 mb-4">
+                                <article class="blog-post-card">
+                                    <figure class="blog-post-card__media">
+                                        <a href="#!"
+                                            ><img
+                                                src="/assets/images/related-1.jpg"
+                                                alt="Article thumbnail"
+                                        /></a>
+                                    </figure>
+                                    <div class="blog-post-card__content">
+                                        <div class="blog-post-card__author">
+                                            <img
+                                                src="/assets/images/author-1.jpg"
+                                                alt="Mitchell Starc"
+                                                class="blog-post-card__avatar"
+                                            />
+                                            <div
+                                                class="blog-post-card__author-info"
+                                            >
+                                                <h4
+                                                    class="blog-post-card__author-name"
+                                                >
+                                                    Mitchell Starc
+                                                </h4>
+                                                <p
+                                                    class="blog-post-card__author-role"
+                                                >
+                                                    Attorney at Law
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <h3 class="blog-post-card__title">
+                                            <a href="#!"
+                                                >5 Key Rules of Law in Our
+                                                Society Must Know in 2022</a
+                                            >
+                                        </h3>
+                                        <a
+                                            href="#!"
+                                            class="blog-post-card__read-more"
+                                            >Learn More</a
+                                        >
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pagination -->
+                    <nav
+                        class="pagination-wrapper mt-4"
+                        aria-label="Page navigation"
+                    >
+                        <div class="container">
+                            <ul class="pagination">
+                                <li class="pagination__item">
+                                    <a
+                                        class="pagination__link pagination__link--active"
+                                        href="#!"
+                                        >1</a
+                                    >
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#!">2</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#!">3</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#!">4</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#!">5</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </section>
+                <!-- ==================== RELATED ARTICLES SECTION END ==================== -->
+            </main>
+            <%- include('partials/footer.ejs') %>
+        </div>
+        <script type="module" src="./main.js"></script>
+    </body>
+</html>

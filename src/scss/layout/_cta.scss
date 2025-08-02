@@ -1,0 +1,14 @@
+.cta {
+    background: var(--Green, #017848);
+    text-align: center;
+    padding: 100px 0;
+    .section-label {
+        color: #fff;
+    }
+    .section-desc {
+        width: 470px;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 38px;
+    }
+}

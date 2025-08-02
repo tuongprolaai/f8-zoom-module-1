@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <%- include("partials/head.ejs")%>
+    </head>
+    <body>
+        <div class="page-practice">
+            <%- include('partials/header.ejs') %>
+            <main class="main">
+                <!-- ==================== HERO SECTION FOR SUBPAGES ==================== -->
+                <section class="hero-subpage">
+                    <div class="container">
+                        <div class="row">
+                            <div
+                                class="col-8 offset-2 offset-md-0 col-lg-12 offset-lg-0"
+                            >
+                                <h1 class="hero-subpage__heading">
+                                    Our Practice Areas to Serve You
+                                </h1>
+                                <p class="hero-subpage__desc">
+                                    Where every injury is personal. We are a
+                                    different kind of law firm. Let our small,
+                                    passionate group of trial lawyers fight for
+                                    your rights!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ==================== HERO SECTION END ==================== -->
+
+                <!-- ==================== PRACTICE GRID SECTION START ==================== -->
+                <section class="practice-grid py-5">
+                    <div class="container">
+                        <!-- Section Header -->
+                        <div class="practice-grid__header mb-5">
+                            <p class="section-label">#Services</p>
+                            <h2 class="section-heading">Our Practice Areas</h2>
+                            <p class="section-desc">
+                                Our Law Office provides a professional
+                                experience for all our clients, helping them
+                                navigate their legal rights.
+                            </p>
+                        </div>
+
+                        <!-- Practice List -->
+                        <div class="row g-3">
+                            <!-- Practice Card 1 -->
+                            <div class="col-4 col-md-6 mb-4">
+                                <a href="#!" class="practice-card">
+                                    <img
+                                        src="/assets/images/practice-1.jpg"
+                                        alt="Personal Injury Law"
+                                        class="practice-card__image"
+                                    />
+                                    <div class="practice-card__title-wrapper">
+                                        <h3 class="practice-card__title">
+                                            Personal Injury Law
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Practice Card 2 -->
+                            <div class="col-4 col-md-6 mb-4">
+                                <a href="#!" class="practice-card">
+                                    <img
+                                        src="/assets/images/practice-2.jpg"
+                                        alt="Employment Law"
+                                        class="practice-card__image"
+                                    />
+                                    <div class="practice-card__title-wrapper">
+                                        <h3 class="practice-card__title">
+                                            Employment Law
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Practice Card 3 -->
+                            <div class="col-4 col-md-6 mb-4">
+                                <a href="#!" class="practice-card">
+                                    <img
+                                        src="/assets/images/practice-3.jpg"
+                                        alt="Immigration Law"
+                                        class="practice-card__image"
+                                    />
+                                    <div class="practice-card__title-wrapper">
+                                        <h3 class="practice-card__title">
+                                            Immigration Law
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Practice Card 4 -->
+                            <div class="col-4 col-md-6 mb-4">
+                                <a href="#!" class="practice-card">
+                                    <img
+                                        src="/assets/images/practice-4.jpg"
+                                        alt="Family Law"
+                                        class="practice-card__image"
+                                    />
+                                    <div class="practice-card__title-wrapper">
+                                        <h3 class="practice-card__title">
+                                            Family Law
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Practice Card 5 -->
+                            <div class="col-4 col-md-6 mb-4">
+                                <a href="#!" class="practice-card">
+                                    <img
+                                        src="/assets/images/practice-5.jpg"
+                                        alt="Divorce Law"
+                                        class="practice-card__image"
+                                    />
+                                    <div class="practice-card__title-wrapper">
+                                        <h3 class="practice-card__title">
+                                            Divorce Law
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Practice Card 6 -->
+                            <div class="col-4 col-md-6 mb-4">
+                                <a href="#!" class="practice-card">
+                                    <img
+                                        src="/assets/images/practice-6.jpg"
+                                        alt="Property Law"
+                                        class="practice-card__image"
+                                    />
+                                    <div class="practice-card__title-wrapper">
+                                        <h3 class="practice-card__title">
+                                            Property Law
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ==================== PRACTICE GRID SECTION END ==================== -->
+
+                <!-- ==================== CTA SECTION START ==================== -->
+                <!-- <section class="cta">
+                    <div class="container">
+                        <div class="cta__body">
+                            <p class="section-label">#CTA</p>
+                            <h2 class="section-heading">
+                                Dealing With a Issue?
+                            </h2>
+                            <p class="section-desc">
+                                Where every injury is personal. We are a
+                                different kind of law firm. Let our small,
+                                passionate group of trial lawyers fight for your
+                                rights!
+                            </p>
+                            <a href="#!" class="btn">Get a Consultations</a>
+                        </div>
+                    </div>
+                </section> -->
+                <%- include('partials/cta.ejs') %>
+
+                <!-- ==================== CTA SECTION END ==================== -->
+            </main>
+            <%- include('partials/footer.ejs') %>
+        </div>
+
+        <script type="module" src="./main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+@use "../variables" as *;
+.btn {
+    display: inline-flex;
+    padding: 15px 30px;
+    align-items: center;
+    border-radius: 6px;
+    background: $Orange;
+    color: #fff;
+    font-family: Manrope;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66667; /* 166.667% */
+}
+
+.btn:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <%- include("partials/head.ejs")%>
+    </head>
+    <body>
+        <div class="page-about">
+            <%- include("partials/header.ejs") %>
+            <main class="main">
+                <!-- ==================== ABOUT INTRO SECTION START ==================== -->
+                <section class="about-intro py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 offset-2">
+                                <h1 class="about-intro__heading">
+                                    You can count on the undivided attention of
+                                    a team that prizes relationships over
+                                    profits.
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ==================== ABOUT INTRO SECTION END ==================== -->
+
+                <!-- ==================== INTERVIEWS SECTION START ==================== -->
+                <section class="interviews py-5">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Interview Card 1 -->
+                            <div class="col-6 mb-4">
+                                <!-- THẺ <a> BỌC BÊN NGOÀI TOÀN BỘ CARD -->
+                                <a href="#!" class="interview-card-link">
+                                    <div class="interview-card">
+                                        <figure class="interview-card__media">
+                                            <img
+                                                src="/assets/images/interview-1.jpg"
+                                                alt="An Interview With Raymond King"
+                                                class="interview-card__image"
+                                            />
+                                            <!-- Nút play giờ là SPAN, không còn là A -->
+                                            <span
+                                                class="play-button"
+                                                aria-label="Play video"
+                                            >
+                                                <i class="fa-solid fa-play"></i>
+                                            </span>
+                                        </figure>
+                                        <div class="interview-card__content">
+                                            <!-- Tiêu đề không còn là link nữa -->
+                                            <h3 class="interview-card__title">
+                                                An Interview With Raymond King
+                                            </h3>
+                                            <p class="interview-card__desc">
+                                                Comparison between various civil
+                                                law and private law
+                                                institutions.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Interview Card 2 (Cấu trúc tương tự) -->
+                            <div class="col-6 mb-4">
+                                <a href="#!" class="interview-card-link">
+                                    <div class="interview-card">
+                                        <figure class="interview-card__media">
+                                            <img
+                                                src="/assets/images/interview-2.jpg"
+                                                alt="An Interview With John Morgan"
+                                                class="interview-card__image"
+                                            />
+                                            <span
+                                                class="play-button"
+                                                aria-label="Play video"
+                                            >
+                                                <i class="fa-solid fa-play"></i>
+                                            </span>
+                                        </figure>
+                                        <div class="interview-card__content">
+                                            <h3 class="interview-card__title">
+                                                An Interview With John Morgan
+                                            </h3>
+                                            <p class="interview-card__desc">
+                                                Comparison between various civil
+                                                law and private law
+                                                institutions.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ==================== INTERVIEWS SECTION END ==================== -->
+
+                <!-- ==================== HISTORY SECTION START ==================== -->
+                <section class="history py-5">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <!-- Content Column -->
+                            <div class="col-6">
+                                <div class="history__content">
+                                    <p class="section-label">History</p>
+                                    <h2 class="section-heading">
+                                        Through And Complete Attention to Law
+                                    </h2>
+                                    <p class="section-desc">
+                                        While Mr. Parmele, his paralegals, and
+                                        clerks are busy assisting you with your
+                                        forms, helping you assemble your
+                                        documentation, and keeping you updated
+                                        regularly, Mr. Parmele is busy behind
+                                        the scenes, focusing on winning your
+                                        case.
+                                    </p>
+                                    <p class="section-desc">
+                                        Your initial meeting with Parmele Law
+                                        Firm sets in motion the difficult - and
+                                        tedious - process of getting your
+                                        benefits for you.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Image Column -->
+                            <div class="col-6">
+                                <div class="history__media">
+                                    <!-- Decorative element -->
+                                    <span class="history__decoration"></span>
+                                    <!-- Main image -->
+                                    <img
+                                        src="/assets/images/history-lawyer.jpg"
+                                        alt="A lawyer working at his desk"
+                                        class="history__image"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ==================== HISTORY SECTION END ==================== -->
+
+                <!-- ==================== EXPERIENCE SECTION START ==================== -->
+                <section class="experience">
+                    <div class="container">
+                        <div class="experience__body">
+                            <p class="section-label">OUR EXPERIENCE</p>
+                            <h2 class="section-heading">
+                                20 Years of Experience In Various Cases
+                            </h2>
+                            <p class="section-desc">
+                                Asbestos.com is proud to donate to organizations
+                                that raise awareness and support ongoing
+                                research on mesothelioma, cancer
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- ==================== EXPERIENCE SECTION END ==================== -->
+            </main>
+            <%- include("partials/footer.ejs") %>
+        </div>
+        <script type="module" src="./main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,243 @@
+@use "/scss/mixins";
+@use "../variables" as *;
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; // Đảm bảo header nằm trên các phần tử khác
+    background-color: #fff; // Thêm màu nền để không bị trong suốt khi cuộn
+    &__inner {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__nav {
+        padding-left: 187px;
+    }
+    .nav {
+        &__list {
+            display: flex;
+            align-items: center;
+        }
+        &__link {
+            padding: 0 15px;
+            color: $Dark;
+            font-family: Manrope;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 1.75; /* 175% */
+            transition: color 0.3s ease;
+        }
+        &__arrow-icon {
+            transition: transform 0.3s ease;
+        }
+        &__link:hover {
+            color: $Orange;
+        }
+        &__link:hover .nav__arrow-icon {
+            transform: rotate(180deg);
+        }
+        &__item {
+            position: relative;
+        }
+        &__item:hover .sub-nav {
+            display: block;
+        }
+    }
+    &__contact {
+        text-align: right;
+        &-text {
+            color: $Dark;
+            font-family: Manrope;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 1.75; /* 175% */
+        }
+        &-phone {
+            color: $Dark;
+            font-family: Manrope;
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 1.45455; /* 145.455% */
+        }
+    }
+    .sub-nav {
+        display: none;
+        position: absolute;
+        top: calc(100% + 15px);
+        padding: 12px;
+        left: -20px;
+        background: #fff;
+        width: 185px;
+        &__item:hover .sub-nav__link {
+            color: $Orange;
+        }
+        &__link {
+            color: var(--Grey, #586863);
+            font-family: Manrope;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 1.75; /* 175% */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 30px;
+            top: -20px;
+            left: 0;
+            position: absolute;
+        }
+    }
+
+    .mobile-nav,
+    .mobile-nav__hamburger,
+    .mobile-nav__overlay {
+        display: none;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 300px;
+        max-width: 90%;
+        background-color: #fff;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+        transform: translateX(-100%);
+        transition: transform 0.4s ease;
+
+        font-family: Manrope;
+        &__list {
+            text-align: center;
+        }
+
+        &__link {
+            display: block;
+            padding: 12px 0;
+            color: $Dark;
+            font-size: 1.8rem;
+            font-weight: 500;
+            border-bottom: 1px solid #eee;
+        }
+        &__item:hover {
+            display: block;
+            background: $Orange;
+        }
+        &__item:hover a {
+            color: #fff;
+        }
+
+        &__item:hover span {
+            color: #fff;
+        }
+        &__close {
+            font-size: 2.2rem;
+            color: $Dark;
+            background: none;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 20px;
+        }
+        &__logo {
+            display: block;
+            text-align: center;
+        }
+    }
+    .mobile-sub-nav {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-out;
+
+        &__item:hover {
+            background: #fff;
+        }
+        &__item:hover a {
+            color: #000;
+        }
+        &__link {
+            display: block;
+            padding: 12px 0;
+            color: #555;
+            font-size: 1.6rem;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 5px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    .submenu-toggle:checked {
+        & ~ .mobile-nav__link .nav__arrow-icon {
+            transform: rotate(180deg);
+        }
+
+        & ~ .mobile-sub-nav {
+            max-height: 500px;
+        }
+    }
+    .mobile-nav__overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 99;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.4s ease, visibility 0.4s ease;
+    }
+
+    .mobile-nav__hamburger {
+        font-size: 2.2rem;
+        color: $Dark;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-nav__toggle:checked {
+        & ~ .mobile-nav {
+            transform: translateX(0);
+        }
+        & ~ .mobile-nav__overlay {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    @include mixins.screen(xl) {
+        .header__nav {
+            padding-left: 0;
+        }
+    }
+
+    @include mixins.screen(lg) {
+        &__nav,
+        &__logo {
+            display: none;
+        }
+        .mobile-nav,
+        .mobile-nav__hamburger,
+        .mobile-nav__overlay {
+            display: block;
+        }
+    }
+    @include mixins.screen(md) {
+    }
+}

@@ -4,10 +4,14 @@
 @use "./layout/grid";
 @use "./layout/header";
 @use "./layout/footer";
+@use "./layout/cta";
 
 // Pages
 @use "./pages/home";
 @use "./pages/about";
+@use "./pages/practice";
+@use "./pages/practice-details";
+@use "./pages/blog";
 
 // Components
 @use "./components/buttons";
@@ -46,4 +50,5 @@ button {
 
 a {
     color: inherit;
+    text-decoration: none;
 }
